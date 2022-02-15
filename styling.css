@@ -5,10 +5,43 @@ body {
   h1 {
     color: white;
     text-align: center;
+    margin: 0px;
   }
+  #container{
+    background-color: rgb(26, 18, 143);
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+  #main{
+    background-color: rgb(0, 174, 255);
+    float: none ;
+  }
+  #nav{
+    background-color: goldenrod;
+    width: 300x;
+    
+    float: right; 
+    
+    
+    
+    }
   
+  #content{
+    padding: 10px;
+  }
+  a{
+    text-decoration: none;
+    color: rgb(94, 6, 72);
+  }
   p {
     font-family: 'Times New Roman', Times, serif;
     font-size: 25px;
     color: rgb(255,255,255);
+  }
+
+  #footer{
+    background-color: rgb(192, 143, 143);
+    clear:both;
   }
