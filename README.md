@@ -1,3 +1,3 @@
 # anubrotoghose
 
-https://brave-heisenberg-9e9330.netlify.app/
+https://frabjous-lamington-da3af3.netlify.app/
