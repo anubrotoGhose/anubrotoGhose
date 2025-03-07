@@ -5,160 +5,146 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styling.css">
-    <title>Anubroto Ghose</title>
+    <title>Portfolio</title>
 </head>
 
 <body>
-    <header>
-        <h3 class="c1">Anubroto Ghose's Personal Site</h3>
-    </header>
-
-    <section style="text-align: center;">
-        <img src="./assets/profilepage.jpg" alt="Profile Picture" width="320" height="400">
-        <p style="font-size: small;">The Photo Taken At My College Vellore Institute of Technology, Chennai</p>
-    </section>
-
-    <section style="text-align: center; font-size: 16pt; margin: 50px;">
-        <p>
-            I am a driven B.Tech CSE student with unwavering passion for technology, committed to harnessing its
-            potential to revolutionize the world and address complex challenges, seeking opportunities to contribute
-            meaningfully and foster innovation.
-        </p>
-    </section>
-
-    <nav style="text-align: center; margin: 20px 0;">
-        <p>
-            <a href="#education">Education</a> |
-            <a href="#experience">Experience</a> |
-            <a href="#projects">Projects</a> |
-            <a href="#technicalskills">Technical Skills</a> |
-            <a href="#softskills">Soft Skills</a> |
-            <a href="#certifications">Certifications</a>
-        </p>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="openTab(event, 'about')" class="tab-link active">About</a></li>
+            <li><a href="#" onclick="openTab(event, 'projects')" class="tab-link">Projects</a></li>
+            <li><a href="#" onclick="openTab(event, 'skills')" class="tab-link">Skills</a></li>
+            <li><a href="#" onclick="openTab(event, 'resume')" class="tab-link">Resume</a></li>
+            <li><a href="#" onclick="openTab(event, 'contact')" class="tab-link">Contact</a></li>
+        </ul>
     </nav>
 
-    <!-- Site Search Section -->
-    <!-- <section class="columnt2" style="text-align: center; margin: 20px;">
-        <form method="post" action="/cgi-bin/site-search.cgi">
-            <label>Site search: <input type="text" size="30" name="term"></label>
-            <input type="submit" value="go">
-            <a style="font-family: monospace;" href="site-search/index.html">advanced</a>
-        </form>
-    </section> -->
+    <div class="tab-content active" id="about">
+        <h2>About Me</h2>
+        <section style="text-align: center;">
+            <img src="./assets/profilepage.jpg" alt="Profile Picture" width="320" height="400">
+            <!-- <p style="font-size: small;">The Photo Taken At My College Vellore Institute of Technology, Chennai</p> -->
+        </section>
+        <p>I am a driven software engineer with unwavering passion for technology, committed to harnessing its
+            potential to revolutionize the world and address complex challenges, seeking opportunities to contribute
+            meaningfully and foster innovation.</p>
+    </div>
 
-    <section class="columnt2" style="text-align: center; margin: 20px;">
-        <form method="post" action="/search">
-            <label>Site search: <input type="text" size="30" name="term"></label>
-            <input type="submit" value="go">
-            <a style="font-family: monospace;" href="site-search/index.html">advanced</a>
-        </form>
-    </section>
+    <div class="tab-content" id="projects">
+        <h2>Projects</h2>
+    
+        <div class="project">
+            <h3>IPL Stats Explorer | Python, Flask, SQLite, Vercel</h3>
+            <ul>
+                <li>Developed a dynamic web platform to access extensive IPL stats (2008-2022).</li>
+                <li>Implemented customizable data retrieval with Flask backend and HTML/CSS frontends.</li>
+                <li>Deployed using Vercel for seamless accessibility.</li>
+                <li>Designed an efficient searching and stats filtering algorithm.</li>
+                <li>Conducted statistical analyses for cricket analytics to facilitate informed decision-making.</li>
+            </ul>
+        </div>
+    
+        <div class="project">
+            <h3>Sales Predictive Analytics | Python, Numpy, Pandas, Scikit-Learn</h3>
+            <ul>
+                <li>Developed a comprehensive predictive analytics system using Python, Scikit-Learn, Numpy, and Pandas.</li>
+                <li>Implemented supervised learning techniques to forecast future sales outcomes.</li>
+                <li>Utilized historical data analysis for accurate predictions and insights.</li>
+            </ul>
+        </div>
+    
+        <div class="project">
+            <h3>Conversational AI Chatbot - Argentic ChatBot (Streamlit, LangChain, OpenAI API, Python)</h3>
+            <ul>
+                <li>Developed an interactive AI chatbot using Streamlit with persistent conversation history.</li>
+                <li>Implemented LangChain for chat handling, history management, and OpenAI/Gemini API integration.</li>
+                <li>Designed a session-based chat system with UUID-based conversation tracking.</li>
+                <li>Utilized RunnableWithMessageHistory to enhance contextual understanding.</li>
+                <li>Ensured secure API key management using dotenv and unique user tracking with uuid.</li>
+            </ul>
+        </div>
+    
+        <div class="project">
+            <h3>ArgenticBlog (Flask, Supabase, HTML/CSS, JavaScript)</h3>
+            <ul>
+                <li>Developed a dynamic web application for blogging using Flask.</li>
+                <li>Implemented user authentication, article posting, search functionality, and profile management.</li>
+                <li>Utilized Supabase for secure data storage and retrieval.</li>
+                <li>Designed a user-friendly interface with responsive HTML/CSS templates.</li>
+                <li>Ensured secure file uploads and robust session management.</li>
+                <li>Improved user engagement through streamlined search functionality and personalized profiles.</li>
+            </ul>
+        </div>
+    
+        <button onclick="showAlert()">See More Projects</button>
+    </div>
     
 
-    <main>
-        <hr>
+    <div class="tab-content" id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Python, JavaScript</li>
+            <li>Flask (Backend Development)</li>
+            <li>HTML, CSS, Streamlit (Frontend Development)</li>
+            <li>SQLite, Supabase (Database Management)</li>
+            <li>Machine Learning (Scikit-Learn, Numpy, Pandas)</li>
+            <li>Deep Learning (PyTorch and Tensorflow)</li>
+            <li>Data Analytics & Statistical Analysis</li>
+            <li>API Integration (OpenAI API, LangChain, Gemini API)</li>
+            <li>Deployment & Hosting (Vercel)</li>
+            <li>Authentication & Security (User Authentication, dotenv)</li>
+            <li>Web Application Development (Full-Stack, CRUD, MVC)</li>
+        </ul>
+    </div>
+    
 
-        <section id="education">
-            <h3>Education</h3>
-            <ul>
-                <li>
-                    Vellore Institute of Technology Chennai, Tamil Nadu<br>
-                    B.Tech. - Computer Science and Engineering with Specialization in AI and ML<br>
-                    CGPA: 8.64<br>
-                    Sep 2021 - May 2025
-                </li>
-                <li>
-                    Hiranandani Foundation School Thane, Maharashtra<br>
-                    STD XII ISC<br>
-                    Percentage: 92%<br>
-                    June 2019 - July 2021
-                </li>
-                <li>
-                    Smt Sulochanadevi Singhania School Thane, Maharashtra<br>
-                    STD X ICSE<br>
-                    Percentage: 94.33%<br>
-                    April 2017 - May 2019
-                </li>
-            </ul>
-        </section>
+    <div class="tab-content" id="resume">
+        <h2>Resume</h2>
+        <iframe src="assets/Anubroto_Ghose_CV.pdf" width="100%" height="500px"></iframe>
+        <br>
+        <a href="assets/Anubroto_Ghose_CV.pdf" download class="download-btn">Download Resume</a>
+    </div>
 
-        <hr>
 
-        <section id="experience">
-            <h3>Experience</h3>
-            <p>Intern<br>Rockwell Automation India Private Limited, Pune, Maharashtra</p>
-            <ul>
-                <li>Developed a SCADA simulation for an API manufacturing plant using FactoryTalk</li>
-                <li>Used View Studio Edition and Studio 5000</li>
-                <li>Created a Python script to delete a directory in a network</li>
-                <li>Wrote Python code for manipulating L5X files</li>
-                <li>Created prediction analytics system using machine learning to forecast future outcomes based on historical data</li>
-            </ul>
-        </section>
+    <div class="tab-content" id="contact">
+        <h2>Contact</h2>
+        <form action="https://formsubmit.co/anubrotoghose@gmail.com" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        
+        <p>Email: anubrotoghose@gmail.com</p>
+        <p>LinkedIn: <a href="#">https://www.linkedin.com/in/anubroto-ghose-668bb1232/</a></p>
+        <p>Github: <a href="#">https://github.com/anubrotoGhose/</a></p>
+    </div>
 
-        <hr>
+    <script>
+        function openTab(event, tabName) {
+            var i, tabContent, tabLinks;
+            tabContent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabContent.length; i++) {
+                tabContent[i].style.display = "none";
+                tabContent[i].classList.remove("active");
+            }
 
-        <section id="projects">
-            <h3>Projects</h3>
-            <article>
-                <h4>IPL Stats Explorer | Python, Flask, SQLite, Vercel</h4>
-                <p>January 2024 - March 2024</p>
-                <ul>
-                    <li>Developed a dynamic web platform to access extensive IPL stats (2008-2022)</li>
-                    <li>Implemented customizable data retrieval with Flask backend</li>
-                    <li>Designed HTML/CSS frontends</li>
-                    <li>Deployed using Vercel</li>
-                    <li>Efficient searching and stats filtering algorithm</li>
-                </ul>
-            </article>
+            tabLinks = document.getElementsByClassName("tab-link");
+            for (i = 0; i < tabLinks.length; i++) {
+                tabLinks[i].classList.remove("active");
+            }
 
-            <article>
-                <h4>Sales Predictive Analytics | Python, Numpy, Pandas, Scikit-Learn</h4>
-                <p>November 2023 - December 2023</p>
-                <ul>
-                    <li>Developed a comprehensive predictive analytics system</li>
-                    <li>Leveraged Python, Scikit-Learn, Numpy, Pandas, and Matplotlib</li>
-                    <li>Implemented supervised learning techniques</li>
-                    <li>Accurately forecasted future sales outcomes using historical data</li>
-                </ul>
-            </article>
-        </section>
+            document.getElementById(tabName).style.display = "block";
+            document.getElementById(tabName).classList.add("active");
+            event.currentTarget.classList.add("active");
 
-        <hr>
-
-        <section id="technicalskills">
-            <h3>Technical Skills</h3>
-            <ul>
-                <li>Languages: Java, Python, C/C++, SQL, JavaScript, HTML/CSS, R</li>
-                <li>Frameworks: React, Node.js, Next.js, Flask</li>
-                <li>Developer Tools: Git, VS Code, PyCharm, IntelliJ</li>
-                <li>Libraries: Pandas, NumPy, Matplotlib, TensorFlow, PyTorch, Scikit-learn</li>
-            </ul>
-        </section>
-
-        <hr>
-
-        <section id="softskills">
-            <h3>Soft Skills</h3>
-            <ul>
-                <li>Languages: English, Bengali, Hindi</li>
-                <li>Keen attention to detail and ability to notice important details quickly</li>
-                <li>Strong decision-making skills</li>
-                <li>Excellent verbal and written communication skills</li>
-                <li>Efficient at managing multiple tasks and projects simultaneously</li>
-            </ul>
-        </section>
-
-        <hr>
-
-        <section id="certifications">
-            <h3>Certifications</h3>
-            <ul>
-                <li>Android Application Development</li>
-                <li>Google Cloud Digital Leader</li>
-            </ul>
-        </section>
-    </main>
+            // Force PDF reload when showing the Resume tab
+            if (tabName === "resume") {
+                var iframe = document.querySelector("#resume iframe");
+                iframe.src = iframe.src; // Reloads the iframe
+            }
+        }
+    </script>
 </body>
 
 </html>

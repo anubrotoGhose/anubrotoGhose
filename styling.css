@@ -1,118 +1,40 @@
-/* Container Styling */
-#container {
-  background-color: rgb(26, 18, 143);
-  width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Body Styling */
 body {
-  font-family: 'Arial', sans-serif;
-  color: #333;
-  line-height: 1.6;
-  background: linear-gradient(to right, #e0eafc, #cfdef3);
+  font-family: Arial, sans-serif;
 }
-
-/* Header Styling */
-h1 {
-  color: white;
-  text-align: center;
-  margin: 0px;
-  font-family: 'Georgia', serif;
-}
-
-h3.c1 {
-  text-align: center;
-  font-size: 30px;
-  text-decoration: underline;
-  font-family: 'Georgia', serif;
-  animation: fadeIn 1.5s ease-in-out;
-}
-
-/* Column Styling */
-.columnt1 {
-  width: 66%;
-  float: left;
-  text-align: center;
-  border: solid 1px;
-  border-radius: 4px;
+nav {
+  background: #333;
   padding: 10px;
-  margin: 10px 0;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s, transform 0.3s;
+  text-align: center;
 }
-
-.columnt1:hover {
-  background-color: #f0f8ff;
-  transform: scale(1.02);
+nav ul {
+  list-style: none;
+  padding: 0;
 }
-
-/* Image Styling */
-img {
-  height: 25%;
-  width: 25%;
-  border-radius: 10px;
-  border: 2px solid #fff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease-in-out;
+nav ul li {
+  display: inline;
+  margin: 0 10px;
 }
-
-img:hover {
-  transform: scale(1.1);
-}
-
-/* Link Styling */
-a {
+nav ul li a {
   text-decoration: none;
-  color: #0066cc;
-}
-
-a:hover {
-  color: #004080;
-}
-
-/* Button Styling */
-input[type="submit"] {
-  background-color: #0066cc;
-  color: white;
-  border: none;
   padding: 10px 20px;
-  cursor: pointer;
+  color: white;
+  background: #555;
   border-radius: 5px;
 }
-
-input[type="submit"]:hover {
-  background-color: #004080;
+nav ul li a.active {
+  background: #ff9800;
+}
+.tab-content {
+  display: none;
+  padding: 20px;
+  border: 1px solid #ddd;
+  margin-top: 10px;
+}
+.tab-content.active {
+  display: block;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  #container {
-    width: 100%;
-    padding: 10px;
-  }
-  .columnt1 {
-    width: 100%;
-    float: none;
-  }
-  img {
-    height: auto;
-    width: 50%;
-  }
-  h3.c1 {
-    font-size: 24px;
-  }
-}
-
-/* Animations */
-@keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+h1 {
+  text-align: center;
+  margin: 35px 0 20px 0 !important;
 }
