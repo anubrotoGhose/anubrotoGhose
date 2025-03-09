@@ -197,6 +197,29 @@
     </div>
 
     <script>
+        function toggleSidebar() {
+          var sidebar = document.getElementById("sidebar");
+          var content = document.querySelector(".page-content");
+        
+          if (sidebar.classList.contains("active")) {
+            sidebar.classList.remove("active");
+            content.classList.remove("sidebar-open");
+          } else {
+            sidebar.classList.add("active");
+            content.classList.add("sidebar-open");
+          }
+        }
+        
+        // Close sidebar when clicking outside
+        document.addEventListener("click", function (event) {
+          var sidebar = document.getElementById("sidebar");
+          var menuBtn = document.querySelector(".menu-btn");
+        
+          if (!sidebar.contains(event.target) && !menuBtn.contains(event.target)) {
+            sidebar.classList.remove("active");
+            document.querySelector(".page-content").classList.remove("sidebar-open");
+          }
+        });
         function openTab(event, tabName) {
             var i, tabContent, tabLinks;
             tabContent = document.getElementsByClassName("tab-content");
