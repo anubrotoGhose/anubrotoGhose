@@ -14,7 +14,7 @@ With experience in **Flask, Python**, I strive to create impactful solutions tha
 
 - **Programming Languages:** Python, Java, JavaScript
 - **AI/ML & Data Science:** TensorFlow, PyTorch, Scikit-Learn, Numpy, Pandas  
-- **Web Development:** React, Next.js, Node.js, Flask, Streamlit
+- **Web Development:** React, Next.js, Node.js, Flask, Streamlit, Tailwind CSS
 - **AR/VR Development:** Unity, Vuforia, ARCore  
 - **Other Tools:** Git, Vercel, Supabase  
 
