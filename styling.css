@@ -7,7 +7,23 @@ body {
   box-sizing: border-box;
 }
 
-/* Navigation Bar (Default - Landscape Mode) */
+/* Menu Button (Only in Mobile Portrait Mode) */
+.menu-btn {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  background: #333;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 22px;
+  cursor: pointer;
+  border-radius: 5px;
+  z-index: 1100;
+}
+
+/* Navigation Bar (Desktop and Landscape Mode) */
 nav {
   background: #333;
   padding: 15px 0;
@@ -25,8 +41,7 @@ nav ul {
   margin: 0;
   display: flex;
   justify-content: center;
-  overflow-x: auto; /* Allows scrolling for small screens */
-  white-space: nowrap;
+  overflow-x: auto;
 }
 
 nav ul li {
@@ -48,56 +63,61 @@ nav ul li a:hover {
   background: #777;
 }
 
-nav ul li a.active {
-  background: #ff9800;
-}
-
-/* Page Content Wrapper */
-.page-content {
-  padding-top: 70px; /* Ensures content isn't hidden behind navbar */
-}
-
-/* Responsive Navbar for Mobile Portrait Mode */
+/* Responsive Sidebar for Mobile Portrait Mode */
 @media (max-width: 768px) and (orientation: portrait) {
+  /* Hide the main top navbar */
   nav {
-    width: 60px; /* Sidebar width */
-    height: 100vh;
+    display: none;
+  }
+
+  /* Show menu button */
+  .menu-btn {
+    display: block;
+  }
+
+  /* Sidebar Navigation (Initially Hidden) */
+  #sidebar {
     position: fixed;
     top: 0;
-    left: 0;
+    left: -250px; /* Hidden by default */
+    width: 250px;
+    height: 100vh;
     background: #333;
-    padding: 10px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow-y: auto;
+    box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.3);
+    padding-top: 60px;
+    transition: 0.3s ease-in-out;
+    z-index: 1000;
   }
 
-  nav ul {
+  #sidebar ul {
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
     padding-top: 20px;
     width: 100%;
+    text-align: left;
   }
 
-  nav ul li {
+  #sidebar ul li {
     display: block;
-    margin: 10px 0;
     width: 100%;
     text-align: center;
   }
 
-  nav ul li a {
+  #sidebar ul li a {
     display: block;
-    width: 100%;
-    padding: 10px;
-    font-size: 14px;
+    padding: 15px;
+    font-size: 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   }
 
-  /* Push content to the right so it's not covered */
-  .page-content {
-    margin-left: 70px; /* Adjust for sidebar */
-    padding-top: 20px;
+  /* When Sidebar is Active */
+  #sidebar.active {
+    left: 0;
+  }
+
+  /* Push content slightly when sidebar is open */
+  .page-content.sidebar-open {
+    margin-left: 250px;
+    transition: 0.3s ease-in-out;
   }
 }
