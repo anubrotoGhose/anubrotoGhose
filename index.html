@@ -9,8 +9,9 @@
 </head>
 
 <body>
-    <button class="menu-btn" onclick="toggleSidebar()">☰</button>
-    <nav id="sidebar">
+<!--     <button class="menu-btn" onclick="toggleSidebar()">☰</button> -->
+<!--     <nav id="sidebar">-->
+    <nav>
         <ul>
             <li><a href="#" onclick="openTab(event, 'about')" class="tab-link active">About</a></li>
             <li><a href="#" onclick="openTab(event, 'projects')" class="tab-link">Projects</a></li>
@@ -197,29 +198,29 @@
     </div>
 
     <script>
-        function toggleSidebar() {
-          var sidebar = document.getElementById("sidebar");
-          var content = document.querySelector(".page-content");
+        // function toggleSidebar() {
+        //   var sidebar = document.getElementById("sidebar");
+        //   var content = document.querySelector(".page-content");
         
-          if (sidebar.classList.contains("active")) {
-            sidebar.classList.remove("active");
-            content.classList.remove("sidebar-open");
-          } else {
-            sidebar.classList.add("active");
-            content.classList.add("sidebar-open");
-          }
-        }
+        //   if (sidebar.classList.contains("active")) {
+        //     sidebar.classList.remove("active");
+        //     content.classList.remove("sidebar-open");
+        //   } else {
+        //     sidebar.classList.add("active");
+        //     content.classList.add("sidebar-open");
+        //   }
+        // }
         
-        // Close sidebar when clicking outside
-        document.addEventListener("click", function (event) {
-          var sidebar = document.getElementById("sidebar");
-          var menuBtn = document.querySelector(".menu-btn");
+        // // Close sidebar when clicking outside
+        // document.addEventListener("click", function (event) {
+        //   var sidebar = document.getElementById("sidebar");
+        //   var menuBtn = document.querySelector(".menu-btn");
         
-          if (!sidebar.contains(event.target) && !menuBtn.contains(event.target)) {
-            sidebar.classList.remove("active");
-            document.querySelector(".page-content").classList.remove("sidebar-open");
-          }
-        });
+        //   if (!sidebar.contains(event.target) && !menuBtn.contains(event.target)) {
+        //     sidebar.classList.remove("active");
+        //     document.querySelector(".page-content").classList.remove("sidebar-open");
+        //   }
+        // });
         function openTab(event, tabName) {
             var i, tabContent, tabLinks;
             tabContent = document.getElementsByClassName("tab-content");
