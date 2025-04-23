@@ -1,6 +1,6 @@
 # Anubroto Ghose
 
-🌐 **My Website:** [Portfolio](https://frabjous-lamington-da3af3.netlify.app/)  
+🌐 **My Website:** [Portfolio](https://anubrotoghose.github.io/anubrotoGhose)  
 
 # 👋 Welcome
 
