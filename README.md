@@ -8,7 +8,7 @@
 
 I'm **Anubroto Ghose**, a passionate **AI/ML Engineer & Software Developer** with a deep interest in **Machine Learning and it's various applications**. I specialize in building intelligent, scalable applications and exploring cutting-edge AI solutions.
 
-With experience in **Flask, Python**, I strive to create impactful solutions that bridge technology and real-world challenges.
+With experience in **Flask, Fastapi and Python**, I strive to create impactful solutions that bridge technology and real-world challenges.
 
 ## 🛠️ Tech Stack
 
