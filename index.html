@@ -1,266 +1,321 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Anubroto Ghose</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-gray-100 font-sans">
-    <nav class="bg-white shadow-md py-4">
-        <div class="container mx-auto flex justify-between items-center px-6">
-            <h1 class="text-2xl font-bold text-gray-800">Anubroto Ghose</h1>
-            <ul class="flex space-x-6">
-                <li><a href="#about" class="text-gray-600 hover:text-blue-500">About</a></li>
-                <li><a href="#skills" class="text-gray-600 hover:text-blue-500">Skills</a></li>
-                <li><a href="#projects" class="text-gray-600 hover:text-blue-500">Projects</a></li>
-                <li><a href="#resume" class="text-gray-600 hover:text-blue-500">Resume</a></li>
-                <li><a href="#contact" class="text-gray-600 hover:text-blue-500">Contact</a></li>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">&lt;Anubroto /&gt;</a>
+            <ul class="nav-links">
+                <li><a href="#about">01. About</a></li>
+                <li><a href="#skills">02. Skills</a></li>
+                <li><a href="#projects">03. Projects</a></li>
+                <li><a href="#resume">04. Resume</a></li>
+                <li><a href="#contact">05. Contact</a></li>
             </ul>
         </div>
     </nav>
-    
-    <header class="text-center py-20 bg-blue-500 text-white">
-        <h2 class="text-4xl font-bold">Hi, I'm Anubroto</h2>
-        <p class="mt-4 text-lg">Software Engineer | AI/ML Enthusiast | Web Developer</p>
+
+    <!-- Header / Hero -->
+    <header class="hero" id="home">
+        <p class="mono text-gradient" style="font-size: 1.1rem; margin-bottom: 1rem;">Hi, my name is</p>
+        <h2>Anubroto Ghose.</h2>
+        <h2 style="color: var(--text-secondary);">I build things for the web & AI.</h2>
+        <p class="mt-4">Software Engineer | AI/ML Enthusiast | Web Developer</p>
+        <div style="margin-top: 2rem;">
+            <a href="#projects" class="btn btn-primary">Check out my projects!</a>
+        </div>
     </header>
 
-    <section id="about" class="container mx-auto py-16 px-6 text-center">
-        <section class="text-center py-8">
-            <div class="inline-block border-4 border-gray-300 rounded-lg overflow-hidden shadow-lg">
-                <img src="./assets/profilepage.jpg" alt="Profile Picture" class="w-80 h-auto">
+    <!-- About Section -->
+    <section id="about">
+        <h3 class="section-title">01. About Me</h3>
+        <div class="about-content">
+            <div class="profile-img-container">
+                <img src="./assets/profilepage.jpeg" alt="Anubroto Ghose" class="profile-img"
+                    onerror="this.src='https://via.placeholder.com/240/161b22/06b6d4?text=AG'">
             </div>
-            <!-- <p class="text-sm text-gray-600 mt-2">The Photo Taken At My College Vellore Institute of Technology, Chennai</p> -->
-        </section>
-        <h3 class="text-3xl font-semibold text-gray-800">About Me</h3>
-        <p class="mt-4 text-gray-600">I see technology as more than just a tool—it's a force for change. With a passion for innovation and a curiosity 
-            for solving complex problems, I am constantly exploring new ideas and pushing boundaries.</p>
+            <p class="about-text">
+                I see technology as more than just a tool—it's a force for change. With a passion for innovation and a
+                curiosity for solving complex problems, I am constantly exploring new ideas and pushing boundaries.
+            </p>
+        </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="bg-gray-200 py-16 px-6 text-center">
-        <h3 class="text-3xl font-semibold text-gray-800">Skills</h3>
-        <p class="mt-2 text-gray-600">Technical expertise across various domains.</p>
-    
-        <div class="max-w-xl mx-auto bg-white p-4 rounded-lg shadow-md mt-4">
-            <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 text-gray-700 text-sm text-left">
-                <span class="flex items-center gap-2 bg-gray-100 px-3 py-2 rounded-lg shadow-sm">
-                    <i class="fa-solid fa-code text-blue-500"></i> Python, JavaScript, Rust
-                </span>
-                <span class="flex items-center gap-2 bg-gray-100 px-3 py-2 rounded-lg shadow-sm">
-                    <i class="fa-solid fa-server text-green-500"></i> Flask (Backend)
-                </span>
-                <span class="flex items-center gap-2 bg-gray-100 px-3 py-2 rounded-lg shadow-sm">
-                    <i class="fa-brands fa-html5 text-orange-500"></i> HTML, CSS, Streamlit
-                </span>
-                <span class="flex items-center gap-2 bg-gray-100 px-3 py-2 rounded-lg shadow-sm">
-                    <i class="fa-solid fa-database text-purple-500"></i> SQLite, Supabase
-                </span>
-                <span class="flex items-center gap-2 bg-gray-100 px-3 py-2 rounded-lg shadow-sm">
-                    <i class="fa-solid fa-brain text-pink-500"></i> ML (Scikit-Learn, Pandas)
-                </span>
-                <span class="flex items-center gap-2 bg-gray-100 px-3 py-2 rounded-lg shadow-sm">
-                    <i class="fa-solid fa-robot text-indigo-500"></i> Deep Learning (PyTorch)
-                </span>
-                <span class="flex items-center gap-2 bg-gray-100 px-3 py-2 rounded-lg shadow-sm">
-                    <i class="fa-solid fa-chart-line text-yellow-500"></i> Data Analytics
-                </span>
-                <span class="flex items-center gap-2 bg-gray-100 px-3 py-2 rounded-lg shadow-sm">
-                    <i class="fa-solid fa-plug text-red-500"></i> API Integration
-                </span>
-                <span class="flex items-center gap-2 bg-gray-100 px-3 py-2 rounded-lg shadow-sm">
-                    <i class="fa-solid fa-cloud text-cyan-500"></i> Deployment (Vercel)
-                </span>
-                <span class="flex items-center gap-2 bg-gray-100 px-3 py-2 rounded-lg shadow-sm">
-                    <i class="fa-solid fa-lock text-gray-500"></i> Security & Auth
-                </span>
-                <span class="flex items-center gap-2 bg-gray-100 px-3 py-2 rounded-lg shadow-sm">
-                    <i class="fa-solid fa-globe text-green-700"></i> Web Dev (CRUD, MVC)
-                </span>
-            </div>
-        </div>
-    </section>    
-
-
-    <section id="projects" class="container mx-auto py-16 px-6 text-center">
-        <div class="container mx-auto text-center">
-            <h3 class="text-3xl font-semibold text-gray-800">Projects</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
-    
-                <!-- IPL Stats Explorer -->
-                <div class="bg-white shadow-lg p-6 rounded-lg">
-                    <h4 class="text-xl font-semibold flex items-center justify-center gap-2">
-                        IPL Stats Explorer
-                        <a href="https://github.com/anubrotoGhose/IPL-Stats-Explorer" target="_blank" aria-label="GitHub Repository">
-                            <i class="fab fa-github text-gray-700 hover:text-black text-2xl"></i>
-                        </a>
-                    </h4>
-                    <ul class="mt-2 text-gray-600 text-left list-disc list-inside">
-                        <li>Developed a dynamic web platform to access IPL stats (2008-2022).</li>
-                        <li>Implemented customizable data retrieval with Flask backend.</li>
-                        <li>Deployed using Vercel for seamless accessibility.</li>
-                        <li>Designed efficient search and stats filtering algorithms.</li>
-                        <li>Conducted statistical analysis for cricket analytics.</li>
-                    </ul>
+    <section id="skills">
+        <h3 class="section-title">02. Skills</h3>
+        <div style="max-width: 800px; margin: 0 auto;">
+            <p style="text-align: center; color: var(--text-secondary); margin-bottom: 2rem;">Technologies I've been
+                working with recently:</p>
+            <div class="skills-grid">
+                <!-- Data / Backend -->
+                <div class="skill-card">
+                    <i class="fa-brands fa-python" style="color: #fbbf24;"></i> Python
                 </div>
-    
-                <!-- Sales Predictive Analytics -->
-                <div class="bg-white shadow-lg p-6 rounded-lg">
-                    <h4 class="text-xl font-semibold flex items-center justify-center gap-2">
-                        Sales Predictive Analytics
-                        <a href="https://github.com/anubrotoGhose/Prediction-Analytics-System" target="_blank" aria-label="GitHub Repository">
-                            <i class="fab fa-github text-gray-700 hover:text-black text-2xl"></i>
-                        </a>
-                    </h4>
-                    <ul class="mt-2 text-gray-600 text-left list-disc list-inside">
-                        <li>Developed a predictive analytics system using Python & Scikit-Learn.</li>
-                        <li>Implemented supervised learning techniques to forecast sales outcomes.</li>
-                        <li>Utilized historical data analysis for accurate predictions.</li>
-                    </ul>
+                <div class="skill-card">
+                    <i class="fa-brands fa-rust" style="color: #ea580c;"></i> Rust
                 </div>
-    
-                <!-- Argentic ChatBot -->
-                <div class="bg-white shadow-lg p-6 rounded-lg">
-                    <h4 class="text-xl font-semibold flex items-center justify-center gap-2">
-                        Argentic ChatBot
-                        <a href="https://github.com/anubrotoGhose/ArgenticChatBot" target="_blank" aria-label="GitHub Repository">
-                            <i class="fab fa-github text-gray-700 hover:text-black text-2xl"></i>
-                        </a>
-                    </h4>
-                    <ul class="mt-2 text-gray-600 text-left list-disc list-inside">
-                        <li>Developed an AI chatbot with Streamlit and persistent chat history.</li>
-                        <li>Implemented LangChain for conversation management.</li>
-                        <li>Integrated OpenAI/Gemini API for contextual responses.</li>
-                        <li>Used secure API key management and UUID-based tracking.</li>
-                    </ul>
+                <div class="skill-card">
+                    <i class="fa-solid fa-server" style="color: #22c55e;"></i> Flask (Backend)
                 </div>
-
-                <!-- Rake -->
-                <div class="bg-white shadow-lg p-6 rounded-lg">
-                    <h4 class="text-xl font-semibold flex items-center justify-center gap-2">
-                        Rake
-                        <a href="https://github.com/ghosecorp/rake" target="_blank" aria-label="GitHub Repository">
-                            <i class="fab fa-github text-gray-700 hover:text-black text-2xl"></i>
-                        </a>
-                    </h4>
-                    <ul class="mt-2 text-gray-600 text-left list-disc list-inside">
-                        <li>Developed a blazing-fast, beginner-friendly HTTP server in pure Rust using only the standard library.</li>
-                        <li>Implemented custom route handling and multi-threaded TCP request processing without external crates.</li>
-                        <li>Enabled static file serving with MIME type detection and dynamic content support.</li>
-                        <li>Designed reusable and extensible server components for easy integration into Rust projects.</li>
-                    </ul>                    
+                <!-- Requested additions -->
+                <div class="skill-card">
+                    <i class="fa-brands fa-node-js" style="color: #22c55e;"></i> Express JS
                 </div>
-
-                <!-- VisionForge -->
-                <div class="bg-white shadow-lg p-6 rounded-lg">
-                    <h4 class="text-xl font-semibold flex items-center justify-center gap-2">
-                        VisionForge
-                        <a href="https://github.com/anubrotoGhose/VisionForgeUI" target="_blank" aria-label="GitHub Repository">
-                            <i class="fab fa-github text-gray-700 hover:text-black text-2xl"></i>
-                        </a>
-                    </h4>
-                    <ul class="mt-2 text-gray-600 text-left list-disc list-inside">
-                        <li>Built a web-based interface to generate and export custom PyTorch models dynamically using React and TailwindCSS.</li>
-                        <li>Implemented a FastAPI backend to convert JSON-based model architecture into PyTorch code and serialize models or weights as downloadable `.pth` files.</li>
-                        <li>Enabled separate download options for full model and model weights using the FileSaver.js library for smooth frontend-to-backend integration.</li>
-                        <li>Used Pydantic for structured data validation.</li>
-                      </ul>
-                      
+                <!-- Frontend -->
+                <div class="skill-card">
+                    <i class="fa-brands fa-js" style="color: #facc15;"></i> JavaScript
                 </div>
-
-                <!-- Ghosenet -->
-                <div class="bg-white shadow-lg p-6 rounded-lg">
-                    <h4 class="text-xl font-semibold flex items-center justify-center gap-2">
-                        Ghosenet
-                        <a href="https://github.com/ghosecorp/rake" target="_blank" aria-label="GitHub Repository">
-                            <i class="fab fa-github text-gray-700 hover:text-black text-2xl"></i>
-                        </a>
-                    </h4>
-                    <ul class="mt-2 text-gray-600 text-left list-disc list-inside">
-                        <li>Created a tensor computation framework in Rust with automatic differentiation.</li>
-                        <li>Implemented support for operations like transpose, abs, conditional select, and broadcasting.</li>
-                        <li>Designed a custom computational graph to support backpropagation and gradient accumulation.</li>
-                        <li>Added serialization support for saving and loading tensors using JSON files.</li>
-                    </ul>                    
+                <div class="skill-card">
+                    <i class="fa-brands fa-react" style="color: #06b6d4;"></i> ReactJS (Vite)
                 </div>
-    
+                <div class="skill-card">
+                    <i class="fa-solid fa-bolt" style="color: #e2e8f0;"></i> NextJS
+                </div>
+                <!-- Others previously on the list -->
+                <div class="skill-card">
+                    <i class="fa-brands fa-html5" style="color: #f97316;"></i> HTML/CSS
+                </div>
+                <div class="skill-card">
+                    <i class="fa-solid fa-database" style="color: #8b5cf6;"></i> SQLite / Supabase
+                </div>
+                <div class="skill-card">
+                    <i class="fa-solid fa-brain" style="color: #ec4899;"></i> ML (Scikit, Pandas)
+                </div>
+                <div class="skill-card">
+                    <i class="fa-solid fa-robot" style="color: #6366f1;"></i> DL (PyTorch)
+                </div>
+                <div class="skill-card">
+                    <i class="fa-solid fa-cloud" style="color: #06b6d4;"></i> Deployment (Vercel)
+                </div>
             </div>
         </div>
     </section>
-    
-    <section id="resume" class="bg-gray-200 py-16 px-6 text-center">
-        <h3 class="text-3xl font-semibold text-gray-800">Resume</h3>
-        <p class="mt-4 text-gray-600">View and download my resume below.</p>
-        
-        <!-- <div class="mt-6">
-            <iframe src="assets/Anubroto_Ghose_CV.pdf" class="w-full h-[500px] shadow-lg rounded-lg"></iframe>
-        </div> -->
-        
-        <a href="assets/Anubroto_Ghose_CV.pdf" download 
-           class="mt-4 inline-block bg-blue-500 text-white px-6 py-2 rounded-lg shadow-md hover:bg-blue-600">
-           Download Resume
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h3 class="section-title">03. Some Things I've Built</h3>
+        <div class="projects-grid">
+
+            <!-- IPL Stats Explorer -->
+            <div class="project-card">
+                <div class="project-header">
+                    <i class="fa-regular fa-folder" style="font-size: 2.5rem; color: var(--accent-cyan);"></i>
+                    <div class="project-links">
+                        <a href="https://github.com/anubrotoGhose/IPL-Stats-Explorer" target="_blank"
+                            aria-label="GitHub Repository"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <h4 class="project-title mb-2">IPL Stats Explorer</h4>
+                <div style="flex-grow: 1; margin-top: 1rem;">
+                    <ul class="project-list">
+                        <li>Dynamic web platform for IPL stats (2008-2022).</li>
+                        <li>Custom retrieval with Flask backend.</li>
+                        <li>Deployed via Vercel.</li>
+                    </ul>
+                </div>
+                <div class="mono" style="margin-top: 1rem; font-size: 0.8rem; color: var(--text-secondary);">Flask
+                    &middot; Python &middot; Vercel</div>
+            </div>
+
+            <!-- Sales Predictive Analytics -->
+            <div class="project-card">
+                <div class="project-header">
+                    <i class="fa-regular fa-folder" style="font-size: 2.5rem; color: var(--accent-cyan);"></i>
+                    <div class="project-links">
+                        <a href="https://github.com/anubrotoGhose/Prediction-Analytics-System" target="_blank"
+                            aria-label="GitHub Repository"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <h4 class="project-title mb-2">Sales Predictive Analytics</h4>
+                <div style="flex-grow: 1; margin-top: 1rem;">
+                    <ul class="project-list">
+                        <li>Predictive analytics using Python & Scikit-Learn.</li>
+                        <li>Supervised learning to forecast sales.</li>
+                        <li>Historical data analysis for accuracy.</li>
+                    </ul>
+                </div>
+                <div class="mono" style="margin-top: 1rem; font-size: 0.8rem; color: var(--text-secondary);">
+                    Scikit-Learn &middot; Python</div>
+            </div>
+
+            <!-- Argentic ChatBot -->
+            <div class="project-card">
+                <div class="project-header">
+                    <i class="fa-regular fa-folder" style="font-size: 2.5rem; color: var(--accent-cyan);"></i>
+                    <div class="project-links">
+                        <a href="https://github.com/anubrotoGhose/ArgenticChatBot" target="_blank"
+                            aria-label="GitHub Repository"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <h4 class="project-title mb-2">Argentic ChatBot</h4>
+                <div style="flex-grow: 1; margin-top: 1rem;">
+                    <ul class="project-list">
+                        <li>AI chatbot with persistent chat history.</li>
+                        <li>LangChain for conversation management.</li>
+                        <li>Integrated OpenAI/Gemini API.</li>
+                    </ul>
+                </div>
+                <div class="mono" style="margin-top: 1rem; font-size: 0.8rem; color: var(--text-secondary);">Streamlit
+                    &middot; LangChain &middot; AI APIs</div>
+            </div>
+
+            <!-- Rake -->
+            <div class="project-card">
+                <div class="project-header">
+                    <i class="fa-regular fa-folder" style="font-size: 2.5rem; color: var(--accent-cyan);"></i>
+                    <div class="project-links">
+                        <a href="https://github.com/ghosecorp/rake" target="_blank" aria-label="GitHub Repository"><i
+                                class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <h4 class="project-title mb-2">Rake</h4>
+                <div style="flex-grow: 1; margin-top: 1rem;">
+                    <ul class="project-list">
+                        <li>Blazing-fast HTTP server in pure Rust.</li>
+                        <li>Multi-threaded TCP processing (std lib only).</li>
+                        <li>MIME type detection & static file serving.</li>
+                    </ul>
+                </div>
+                <div class="mono" style="margin-top: 1rem; font-size: 0.8rem; color: var(--text-secondary);">Rust
+                    &middot; TCP/HTTP</div>
+            </div>
+
+            <!-- VisionForge -->
+            <div class="project-card">
+                <div class="project-header">
+                    <i class="fa-regular fa-folder" style="font-size: 2.5rem; color: var(--accent-cyan);"></i>
+                    <div class="project-links">
+                        <a href="https://github.com/anubrotoGhose/VisionForgeUI" target="_blank"
+                            aria-label="GitHub Repository"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <h4 class="project-title mb-2">VisionForge</h4>
+                <div style="flex-grow: 1; margin-top: 1rem;">
+                    <ul class="project-list">
+                        <li>Web interface to generate PyTorch models via UI.</li>
+                        <li>FastAPI backend converting JSON to .pth files.</li>
+                        <li>React & Tailwind frontend integration.</li>
+                    </ul>
+                </div>
+                <div class="mono" style="margin-top: 1rem; font-size: 0.8rem; color: var(--text-secondary);">React
+                    &middot; FastAPI &middot; PyTorch</div>
+            </div>
+
+            <!-- Ghosenet -->
+            <div class="project-card">
+                <div class="project-header">
+                    <i class="fa-regular fa-folder" style="font-size: 2.5rem; color: var(--accent-cyan);"></i>
+                    <div class="project-links">
+                        <a href="https://github.com/ghosecorp/rake" target="_blank" aria-label="GitHub Repository"><i
+                                class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <h4 class="project-title mb-2">Ghosenet</h4>
+                <div style="flex-grow: 1; margin-top: 1rem;">
+                    <ul class="project-list">
+                        <li>Tensor framework in Rust w/ Autograd.</li>
+                        <li>Computational graph for backprop.</li>
+                        <li>JSON serialization for saving/loading tensors.</li>
+                    </ul>
+                </div>
+                <div class="mono" style="margin-top: 1rem; font-size: 0.8rem; color: var(--text-secondary);">Rust
+                    &middot; Autograd</div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" style="text-align: center;">
+        <h3 class="section-title">04. Resume</h3>
+        <p style="color: var(--text-secondary); margin-bottom: 2rem;">Want to see more of my professional experience?
+        </p>
+        <a href="assets/Anubroto_Ghose_CV.pdf" download class="btn btn-primary">
+            <i class="fa-solid fa-download"></i> Download Resume
         </a>
     </section>
 
-    <section id="contact" class="container mx-auto py-16 px-6 text-center">
-        <h3 class="text-3xl font-semibold text-gray-800">Contact</h3>
-        <p class="mt-4 text-gray-600">Let's connect! Reach out via email, LinkedIn, or GitHub.</p>
-    
-        <div class="mt-8 max-w-md mx-auto bg-white shadow-lg p-6 rounded-lg">
-            <h4 class="text-xl font-semibold text-gray-800">Contact Me</h4>
-    
-            <form action="https://formsubmit.co/anubrotoghose@gmail.com" method="POST" class="mt-4 space-y-4">
-                <div class="flex items-center border border-gray-300 rounded-lg p-2">
-                    <i class="fa-solid fa-user text-gray-600 mr-2"></i>
-                    <input type="text" name="name" placeholder="Your Name" required 
-                           class="w-full focus:outline-none">
+    <!-- Contact Section -->
+    <section id="contact">
+        <h3 class="section-title">05. What's Next?</h3>
+        <div class="contact-container">
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <h4 style="font-size: 2.5rem; margin-bottom: 1rem;">Get In Touch</h4>
+                <p style="color: var(--text-secondary);">Let's connect! I'm currently looking for new opportunities, and
+                    my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get
+                    back to you!</p>
+            </div>
+
+            <div class="contact-wrapper">
+                <form action="https://formsubmit.co/anubrotoghose@gmail.com" method="POST">
+                    <div class="form-group">
+                        <div class="input-container">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" name="name" placeholder="Your Name" required class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-container">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" name="email" placeholder="Your Email" required class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-container">
+                            <i class="fa-solid fa-comment-dots"></i>
+                            <textarea name="message" placeholder="Your Message" required
+                                class="form-control"></textarea>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">
+                        <i class="fa-solid fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fa-regular fa-envelope"></i>
+                    <a href="mailto:anubrotoghose@gmail.com">anubrotoghose@gmail.com</a>
                 </div>
-    
-                <div class="flex items-center border border-gray-300 rounded-lg p-2">
-                    <i class="fa-solid fa-envelope text-gray-600 mr-2"></i>
-                    <input type="email" name="email" placeholder="Your Email" required 
-                           class="w-full focus:outline-none">
+                <div class="contact-item">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <a href="https://www.linkedin.com/in/anubroto-ghose-668bb1232/" target="_blank">LinkedIn</a>
                 </div>
-    
-                <div class="flex items-start border border-gray-300 rounded-lg p-2">
-                    <i class="fa-solid fa-comment-dots text-gray-600 mr-2 mt-2"></i>
-                    <textarea name="message" placeholder="Your Message" required 
-                              class="w-full focus:outline-none resize-none"></textarea>
+                <div class="contact-item">
+                    <i class="fa-brands fa-github"></i>
+                    <a href="https://github.com/anubrotoGhose/" target="_blank">GitHub</a>
                 </div>
-    
-                <button type="submit" 
-                        class="w-full bg-blue-500 text-white px-6 py-2 rounded-lg shadow-md hover:bg-blue-600 flex justify-center items-center">
-                    <i class="fa-solid fa-paper-plane mr-2"></i> Send
-                </button>
-            </form>
+            </div>
         </div>
-    
-        <div class="mt-8">
-            <p class="text-gray-700">
-                <i class="fa-solid fa-envelope text-blue-500"></i>
-                <strong>Email:</strong>
-                <a href="mailto:anubrotoghose@gmail.com" class="text-blue-500 hover:underline">anubrotoghose@gmail.com</a>
-            </p>
-    
-            <p class="text-gray-700 mt-2">
-                <i class="fa-brands fa-linkedin text-blue-500"></i>
-                <strong>LinkedIn:</strong>
-                <a href="https://www.linkedin.com/in/anubroto-ghose-668bb1232/" target="_blank" 
-                   class="text-blue-500 hover:underline">LinkedIn Profile</a>
-            </p>
-    
-            <p class="text-gray-700 mt-2">
-                <i class="fa-brands fa-github text-gray-800"></i>
-                <strong>GitHub:</strong>
-                <a href="https://github.com/anubrotoGhose/" target="_blank" 
-                   class="text-blue-500 hover:underline">GitHub Profile</a>
-            </p>
-        </div>
-    </section>   
-    
-    <footer class="text-center py-4 bg-gray-800 text-white">
-        <p>&copy; 2025 Anubroto Ghose. All Rights Reserved.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Anubroto Ghose. Designed & Built with a focus on Engineering.</p>
     </footer>
+
 </body>
+
 </html>
