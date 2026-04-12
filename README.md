@@ -70,10 +70,9 @@ Maticlib is a high-performance Python Automation Library for creating intelligen
 
 ---
 
-## Analytics
+## GitHub Activity
 <div align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=anubrotoGhose&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true" />
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=anubrotoGhose&layout=compact&theme=tokyonight" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=anubrotoGhose&bg_color=0d1117&color=06b6d4&line=06b6d4&point=06b6d4&area=true&hide_border=true" width="100%" />
 </div>
 
 ---
