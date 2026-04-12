@@ -48,7 +48,7 @@
         <h3 class="section-title">01. About Me</h3>
         <div class="about-content">
             <div class="profile-img-container">
-                <img src="./assets/profilepage.jpeg" alt="Anubroto Ghose" class="profile-img"
+                <img src="./assets/profilePage.jpeg" alt="Anubroto Ghose" class="profile-img"
                     onerror="this.src='https://via.placeholder.com/240/161b22/06b6d4?text=AG'">
             </div>
             <p class="about-text">
@@ -73,7 +73,7 @@
                     <i class="fa-brands fa-rust" style="color: #ea580c;"></i> Rust
                 </div>
                 <div class="skill-card">
-                    <i class="fa-solid fa-server" style="color: #22c55e;"></i> Flask (Backend)
+                    <i class="fa-solid fa-server" style="color: #22c55e;"></i> FastAPI (Backend)
                 </div>
                 <!-- Requested additions -->
                 <div class="skill-card">
@@ -94,7 +94,16 @@
                     <i class="fa-brands fa-html5" style="color: #f97316;"></i> HTML/CSS
                 </div>
                 <div class="skill-card">
-                    <i class="fa-solid fa-database" style="color: #8b5cf6;"></i> SQLite / Supabase
+                    <i class="fa-solid fa-database" style="color: #f59e0b;"></i> MySQL
+                </div>
+                <div class="skill-card">
+                    <i class="fa-solid fa-database" style="color: #3b82f6;"></i> PostgreSQL
+                </div>
+                <div class="skill-card">
+                    <i class="fa-solid fa-database" style="color: #8b5cf6;"></i> SQLite
+                </div>
+                <div class="skill-card">
+                    <i class="fa-solid fa-cloud" style="color: #10b981;"></i> Supabase
                 </div>
                 <div class="skill-card">
                     <i class="fa-solid fa-brain" style="color: #ec4899;"></i> ML (Scikit, Pandas)
@@ -113,6 +122,26 @@
     <section id="projects">
         <h3 class="section-title">03. Some Things I've Built</h3>
         <div class="projects-grid">
+
+            <!-- Maticlib -->
+            <div class="project-card">
+                <div class="project-header">
+                    <i class="fa-solid fa-microchip" style="font-size: 2.5rem; color: var(--accent-cyan);"></i>
+                    <div class="project-links">
+                        <a href="https://github.com/arvohsoft/maticlib" target="_blank" aria-label="GitHub Repository"><i class="fab fa-github"></i></a>
+                        <a href="https://arvohsoft.github.io/maticlib/" target="_blank" aria-label="Documentation"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <h4 class="project-title mb-2">Maticlib</h4>
+                <div style="flex-grow: 1; margin-top: 1rem;">
+                    <ul class="project-list">
+                        <li>High-performance Python library for creating intelligent AI agents.</li>
+                        <li>Advanced MaticGraph engine for stateful & stateless workflow orchestration.</li>
+                        <li>Unified interface for OpenAI, Gemini, and Mistral with deep Pydantic integration.</li>
+                    </ul>
+                </div>
+                <div class="mono" style="margin-top: 1rem; font-size: 0.8rem; color: var(--text-secondary);">Python &middot; AI Agents &middot; MaticGraph &middot; LLM Orchestration</div>
+            </div>
 
             <!-- IPL Stats Explorer -->
             <div class="project-card">
