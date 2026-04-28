@@ -36,6 +36,19 @@ Maticlib is a high-performance Python Automation Library for creating intelligen
 
 ---
 
+## Featured Project: [GhostSQL](https://github.com/ghosecorp/ghostsql)
+**High-Performance AI-Native SQL Database**
+
+GhostSQL is a PostgreSQL-client-compatible database specifically engineered for modern applications that require both scalable relational data and lightning-fast vector search for AI/ML workloads.
+
+- **Native Vector Search:** Purpose-built for AI-native applications and embeddings.
+- **PostgreSQL Compatible:** Seamlessly connects with existing PostgreSQL tools.
+- **Docker Ready:** Deploy effortlessly: `docker pull ghosecorp/ghostsql:latest`
+
+[View Documentation](https://ghosecorp.github.io/ghostsql/) | [Docker Hub](https://hub.docker.com/r/ghosecorp/ghostsql)
+
+---
+
 ## Technical Arsenal
 
 ### Artificial Intelligence & Data Science
