@@ -90,10 +90,11 @@ GhostSQL is a PostgreSQL-client-compatible database specifically engineered for 
 
 ---
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=anubrotoGhose&show_icons=true&theme=tokyonight&hide_border=true" height="165"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=anubrotoGhose&layout=compact&theme=tokyonight&hide_border=true" height="165"/>
-</p>
+## GitHub Stats
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=anubrotoGhose&show_icons=true&theme=tokyonight&hide_border=true)
+
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=anubrotoGhose&layout=compact&theme=tokyonight&hide_border=true)
 ---
 
 ## Contact & Collaboration
