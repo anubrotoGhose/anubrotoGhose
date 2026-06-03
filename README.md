@@ -95,7 +95,6 @@ GhostSQL is a PostgreSQL-client-compatible database specifically engineered for 
 <p align="center">
   <img src="https://streak-stats.demolab.com/?user=anubrotoghose&theme=tokyonight&hide_border=true" />
 </p>
----
 
 ## Contact & Collaboration
 I am always looking for ambitious projects and research collaborations in the AI space.
